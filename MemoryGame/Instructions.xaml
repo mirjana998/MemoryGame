@@ -1,0 +1,21 @@
+﻿<Window x:Class="MemoryGame.Instructions"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MemoryGame"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        Title="Instructions" Height="600" Width="500">
+    <Grid>
+        <Image Stretch="Fill" Source="/MemoryGame;component/Assets/snorlax.png"/>
+        <TextBox FontFamily="Constantia" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Width="396" Foreground="Black" Height="230" Text="Use your left click to flip&#xA;a card to see the pokemon&#xA;on the other side.&#xA;&#xA;Then find the matching&#xA;pokemon card.&#xA;" Background="#80FFFFFF" Margin="0,70,0,0">
+        </TextBox>
+        <Button Name="btnExit" Click="btnExit_Click" Height="50" Width="80" Margin="420,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Background="Transparent" BorderBrush = "Transparent">
+            <Button.Content>
+                <Image Source="/MemoryGame;component/assets/exit.png"/>
+            </Button.Content>
+        </Button>
+    </Grid>
+</Window>

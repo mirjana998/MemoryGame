@@ -1,0 +1,34 @@
+﻿<Window x:Class="MemoryGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MemoryGame"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="700" Width="1180">
+    <Grid>
+        <Image Stretch="Fill" Source="/MemoryGame;component/Assets/pokemonBackground.png"/>
+
+        <Button Name="btnStart" Click="btnStart_Click" Content="S t a r t" Height="50" Margin="400,450,400,120" FontSize="25" FontFamily="Constantia" FontWeight="Bold" Background="#80FFFFFF" BorderBrush="#80FFFFFF" Foreground="#355fac" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Button Name="btnExit" Click="btnExit_Click" Height="50" Width="80" Margin="1020,50,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Background="#80FFFFFF">
+            <Button.Content>
+                <Image Source="/MemoryGame;component/assets/exit.png"/>
+            </Button.Content>
+        </Button>
+
+        <Button Name="btnInfo" Click="btnInfo_Click" Height="50" Width="80" Margin="1020,150,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Background="#80FFFFFF">
+            <Button.Content>
+                <Image Source="/MemoryGame;component/assets/guidebook.png"/>
+            </Button.Content>
+        </Button>
+
+        <Button Name="btnLeaderboard" Click="btnLeaderboard_Click" Height="50" Width="80" Margin="1020,250,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Background="#80FFFFFF">
+            <Button.Content>
+                <Image Source="/MemoryGame;component/assets/leaderboard.png"/>
+            </Button.Content>
+        </Button>
+
+    </Grid>
+</Window>
